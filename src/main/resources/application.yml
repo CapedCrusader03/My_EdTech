@@ -1,0 +1,25 @@
+#spring.application.name=edtech
+spring:
+  application:
+    name: edtech
+  datasource:
+    url: jdbc:mysql://localhost:3306/edtech_dashboard
+    username: root
+    password: Pass@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
